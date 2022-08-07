@@ -1,0 +1,139 @@
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+body {
+    font-family: Helvetica,Arial,sans-serif;
+    font-size: 13px;
+    overflow-y: scroll;
+    overflow-x: auto;
+    cursor: default;
+    margin: 0;
+    padding: 0;
+}
+
+/*---- reusable styles ----*/
+.container {
+    max-width: 1200px;
+    min-width: 320px;
+    margin: 0 auto;
+}
+/*-------------------------*/
+
+/*---- start section header ----*/
+.headerSection {
+    background: url("./assets/img/girl_run.jpeg") no-repeat 0 50%;
+    position: relative;
+    z-index: 0;
+}
+
+.headerSection:after {
+    content: "";
+    display: block;
+    background-color: #f44e50;
+    opacity: .3;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+
+.course {
+    background-color: #fff;
+    max-width: 400px;
+    min-width: 320px;
+}
+
+.courseContent {
+    padding: 45px;
+}
+
+.courseContent_title {
+    font-size: 48px;
+    color: #3d3b3f;
+    line-height: 1.4;
+}
+
+.courseContent_subtitle {
+    font-size: 18px;
+    color: #f44d4f;
+    font-weight: 400;
+    margin: 20px 0;
+    line-height: 1.4;
+}
+
+.order {
+    background-color: #f44d4f;
+    padding: 20px;
+}
+
+.order_title {
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+}
+
+.order_agrmnt {
+    text-align: center;
+    font-size: 12px;
+    line-height: 1.1;
+    font-weight: 400;
+}
+
+.order_agrmnt_a {
+    color: #3288e6;
+}
+
+.order_agrmnt_a:link {
+    text-decoration: none;
+}
+
+.order_agrmnt_a:hover {
+    text-decoration: underline;
+}
+
+.orderForm {
+    padding: 15px 0;
+}
+
+.orderForm_field {
+    height: 35px;
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 0;
+    padding: 4px 10px;
+}
+
+.orderForm_field:focus {
+    outline: none;
+    box-shadow:0 0 10px rgba(82, 168, 236, 0.8);
+}
+
+.orderForm_field:nth-child(2) {
+    margin: 10px 0;
+}
+
+.orderForm_button {
+    height: 35px;
+    width: 100%;
+    background-color: #3d3b3f;
+    margin-top: 15px;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.orderForm_button:hover {
+    color: #f44d4f;
+    cursor: pointer;
+}
+/*---- end section header ----*/
+
+
+/*.test {*/
+/*    background: url(./img/Estella\ Warren\ 1.jpg) no-repeat center fixed;*/
+/*    background-size: 100%;*/
+/*}*/
