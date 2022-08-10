@@ -12,6 +12,11 @@ body {
     padding: 0;
 }
 
+.body_pic {
+    background: url(./assets/img/girl.jpeg) no-repeat center fixed;
+    background-size: 100%;
+}
+
 /*---- reusable styles ----*/
 .container {
     max-width: 1200px;
@@ -130,6 +135,497 @@ body {
     color: #f44d4f;
     cursor: pointer;
 }
+
+.discount_body {
+    background-color: #fff;
+}
+
+.discount_content {
+    display: flex;
+    box-sizing: border-box;
+}
+
+.discount_content_field {
+    display: flex;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.discount_content_rightcol {
+    padding: 0 70px;
+    max-width: 500px;
+    min-width: 500px;
+}
+
+.discount_heading {
+    font-size: 42px;
+    color: #3d3b3f;
+    line-height: 1.4;
+}
+
+.discount_heading_red {
+    font-size: 42px;
+    color: #f44d4f;
+    line-height: 1.4;
+}
+
+.discount_p {
+    font-size: 16px;
+    color: #808080;
+    line-height: 1.4;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+.discount_prise {
+    margin-top: 35px;
+    padding-top: 0;
+    display: flex;
+}
+
+.discount_oldprise_div {
+    display: inline-block;
+    height: inherit;
+    margin: 0;
+    padding-top: 0;
+    margin-right: 30px;
+}
+
+.discount_oldprise {
+    display: inline;
+    font-size: 20px;
+    color: #808080;
+    font-weight: 700;
+    text-decoration: line-through;
+    margin-top: 0;
+}
+
+.discount_newprise_div {
+    display: flex;
+    height: inherit;
+    margin: 0;
+    padding-top: 0;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+}
+
+.discount_newprise {
+    display: inline;
+    font-size: 32px;
+    color: #f44d4f;
+    font-weight: 700;
+    margin: 0;
+}
+
+.discount_btn_div {
+    max-width: 200px;
+}
+
+.instruction {
+    background-color: #f5f5f5;
+}
+
+.instruction_heading_field {
+    padding-top: 60px;
+}
+
+.instruction_heading {
+    max-width: 500px;
+    min-width: 500px;
+    margin: 0 350px;
+}
+
+.instruction_heading_text {
+    display: block;
+    text-align: center;
+    font-size: 42px;
+    color: #3d3b3f;
+    line-height: 1.4;
+}
+
+.instruction_list {
+    display: block;
+    box-sizing: border-box;
+}
+
+.instruction_list_area {
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 50px;
+    padding-bottom: 70px;
+}
+
+.instruction_list_column {
+    box-sizing: border-box;
+    display: block;
+    margin: 0;
+    min-width: 300px;
+}
+
+.instruction_list_block {
+    display: block;
+    width: 100%;
+    align-content: center;
+}
+
+.instruction_list_img {
+    width: 45px;
+    display: block;
+    margin: auto;
+}
+
+.instruction_list_textfield {
+    margin: 10px;
+}
+
+.instruction_list_heading {
+    font-size: 24px;
+    color: #f44d4f;
+    font-weight: 700;
+    text-align: center;
+}
+
+.instruction_list_content {
+    padding: 0 30px;
+}
+
+.instruction_list_content_p {
+    font-size: 16px;
+    color: #808080;
+    line-height: 1.4;
+    font-weight: 600;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.bonus {
+    background: none;
+}
+
+.triangle_tobot {
+    display: block;
+    align-items: center;
+    color: white;
+    width: 0px;
+    height: 0px;
+    border: 40px solid black;
+    border-top-color: #f5f5f5;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    margin: 0 550px;
+}
+
+.bonus_heading_textfield {
+    display: block;
+    margin-top: 90px;
+    min-width: 1200px;
+
+}
+
+.bonus_heading_text {
+    display: block;
+    font-size: 48px;
+    color: #fff;
+    line-height: 1.4;
+    text-align: center;
+}
+
+.bonus_heading_textfield_red {
+    display: block;
+    margin-top: 20px;
+    min-width: 1200px;
+}
+
+.bonus_heading_textfield_red_text {
+    font-size: 48px;
+    color: #f44d4f;
+    line-height: 1.4;
+    text-align: center;
+}
+
+.bonus_content_field {
+    display: block;
+    margin-top: 50px;
+    min-width: 1200px;
+    margin-bottom: 100px;
+}
+
+.bonus_content_text {
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    word-wrap: break-word;
+    line-height: 1.8;
+}
+
+.redsection {
+    background-color: #f44d4f;
+}
+
+.redsection_textfield {
+    display: block;
+    min-width: 1200px;
+    padding-top: 80px;   
+}
+
+.redsection_text {
+    font-size: 48px;
+    color: #fff;
+    line-height: 1.4;
+    text-align: center;
+}
+
+.triangle_totop {
+    display: block;
+    align-items: center;
+    color: white;
+    width: 0px;
+    height: 0px;
+    border: 40px solid #f5f5f5;
+    border-top-color: #f5f5f5;
+    border-right-color: transparent;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    margin: 0 550px;
+}
+
+.lists {
+    background-color: #f5f5f5;
+}
+
+.lists_colomns {
+    min-width: 1200px;
+    display: flex;
+    box-sizing: border-box;
+}
+
+.colomn {
+    min-width: 330px;
+    margin-right: 70px;
+    margin-top: 100px;
+}
+
+.colomn_heading {
+    text-align: left;
+    font-size: 22px;
+    color: #3d3b3f;
+    display: block;
+    width: 200px;
+    box-sizing: border-box;
+}
+
+.colomn_ol {
+    text-align: left;
+}
+
+ol {
+    padding-left: 14px;
+    box-sizing: border-box;
+    color: #f44d4f;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.4;
+}
+
+.adv {
+    background-color: #fff;
+}
+
+.adv_blok {
+    display: flex;
+    min-width: 1200px;
+    padding-top: 100px;
+    box-sizing: border-box;
+    padding-bottom: 80px;
+}
+
+.adv_blok_gray {
+    background-color: #3d3b3f;
+    margin-right: 10px;
+}
+
+.adv_blok_gray_fruits {
+    background: url(./assets/img/fruits.png) no-repeat bottom right;
+    height: 396px;
+    width: 588px;
+}
+
+.adv_blok_red {
+    background-color: #f44d4f;
+    margin-left: 10px;
+}
+
+.adv_blok_red_girl {
+    background: url(./assets/img/girl_white.png) no-repeat bottom right;
+    height: 396px;
+    width: 588px;
+}
+
+.adv_blok_hedind_area {
+    width: 300px;
+    margin-left: 40px;
+    margin-top: 40px;
+}
+
+.adv_blok_heading {
+    font-size: 48px;
+    color: #fff;
+    line-height: 1.4;
+    text-align: left;
+}
+
+.adv_blok_p_area {
+    width: 350px;
+    height: 120px;
+    margin-left: 40px;
+}
+
+.adv_blok_p {
+    font-size: 18px;
+    color: #fff;
+    text-align: left;
+    word-wrap: break-word;
+    line-height: 1.4;
+    font-weight: 500;
+}
+
+.adv_blok_gray_btn_div, .adv_blok_red_btn_div {
+    width: 200px;
+}
+
+.adv_blok_gray_btn {
+    height: 40px;
+    width: 100%;
+    background-color: #f44d4f;
+    margin-top: 15px;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.adv_blok_gray_btn:hover {
+    color: #3d3b3f;
+    cursor: pointer;
+}
+
+.adv_blok_red_btn {
+    height: 40px;
+    width: 100%;
+    background-color: #3d3b3f;
+    margin-top: 15px;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.adv_blok_red_btn:hover {
+    color: #f44d4f;
+    cursor: pointer;
+}
+
+.footer {
+    background: #f5f5f5;
+}
+
+.footer_blok {
+    width: 1200px;
+    display: flex;
+    padding-top: 60px;
+}
+
+.footer_blok_heading {
+    font-size: 42px;
+    color: #f44d4f;
+    line-height: 1.4;
+    width: 400px;
+}
+
+.footer_blok_order_form {
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    background: #fff;
+    padding: 25px 100px 20px 30px;
+}
+
+.footer_blok_order_heading {
+    font-size: 24px;
+    color: #808080;
+    line-height: 1.4;
+}
+
+.footer_blok_ordere_area {
+    display: flex;
+    height: 46px;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.footer_blok_order_input {
+    height: 35px;
+    width: 400px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 0;
+    padding: 4px 10px;
+    background: #f5f5f5;
+    font-size: 18px;
+}
+
+.footer_blok_order_input:focus {
+    outline: none;
+    box-shadow:0 0 10px rgba(82, 168, 236, 0.8);
+}
+
+.footer_blok_order_btn_area {
+    width: 200px;
+    box-sizing: border-box;
+}
+
+.footer_blok_order_btn {
+    height: 40px;
+    width: 100%;
+    background-color: #f44d4f;
+    margin-top: 15px;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.footer_blok_order_btn:hover {
+    background: #3d3b3f;
+    cursor: pointer;
+}
+
+.footer_blok_order_agrmnt {
+    margin-top: 0px;
+    text-align: right;
+}
+
+.footer_blok_icons {
+    display: flex;
+    width: 1200px;
+    justify-content: center;
+    padding: 40px 0;
+}
+
+.footer_blok_icons_png {
+    margin: 10px;
+    opacity: .5;
+}
+
+
+
 /*---- end section header ----*/
 
 
@@ -137,3 +633,4 @@ body {
 /*    background: url(./img/Estella\ Warren\ 1.jpg) no-repeat center fixed;*/
 /*    background-size: 100%;*/
 /*}*/
+
