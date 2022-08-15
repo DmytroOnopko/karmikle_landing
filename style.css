@@ -2,6 +2,10 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0;
 }
 
+ol, li {
+    margin: 0;
+}
+
 body {
     font-family: Helvetica,Arial,sans-serif;
     font-size: 13px;
@@ -147,9 +151,9 @@ body {
     padding-top: 45px;
 }
 
-.discount_content_rightcol {
-    padding: 0 70px;
-    min-width: 500px;
+.discount_content_girl {
+    padding-right: 40px;
+    
 }
 
 .discount_heading__gray {
@@ -163,7 +167,6 @@ body {
     font-size: 42px;
     color: #f44d4f;
     line-height: 1.4;
-    display: block;
 }
 
 .discount_p {
@@ -172,10 +175,12 @@ body {
     line-height: 1.4;
     font-weight: 400;
     margin-bottom: 0;
+    min-width: 340px;
 }
 
 .discount_p__newline {
     display: block;
+    min-width: 340px;
     margin-top: 10px;
 }
 
@@ -232,17 +237,17 @@ body {
 
 .instruction_list_area {
     display: flex;
-    width: 100%;
-    box-sizing: border-box;
-    margin-top: 50px;
+    margin-top: 30px;
     padding-bottom: 70px;
-    justify-content: space-around;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-right: -10px;
+    margin-left: -10px;
 }
 
 .instruction_list_column {
-    box-sizing: border-box;
-    margin: 0;
     padding: 0 10px;
+    width: 270px;
 }
 
 .instruction_list_img {
@@ -250,6 +255,7 @@ body {
     display: block;
     margin: auto;
     margin-bottom: 20px;
+    padding-top: 20px;
 }
 
 .instruction_list_heading {
@@ -281,7 +287,7 @@ body {
     border-bottom-color: transparent;
     border-left-color: transparent;
     margin: 0 auto;
-    mar
+
 }
 
 .bonus {
@@ -349,6 +355,7 @@ body {
     display: flex;
     box-sizing: border-box;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .colomn {
@@ -371,7 +378,7 @@ ol {
     font-size: 18px;
     font-weight: 300;
     line-height: 1.4;
-    padding-left: 18px;
+    padding-left: 20px;
 }
 
 .adv {
@@ -380,20 +387,21 @@ ol {
 
 .adv_blok {
     display: flex;
-    box-sizing: border-box;
     justify-content: center;
     padding: 60px 0;
+    flex-wrap: wrap;
+    margin: -10px;
 }
 
 .adv_blok_gray {
     background-color: #3d3b3f;
-    margin-right: 10px;
+    margin: 10px;
     display: flex;
 }
 
 .adv_blok_red {
     background-color: #f44d4f;
-    margin-left: 10px;
+    margin: 10px;
     display: flex;
 }
 
@@ -458,23 +466,28 @@ ol {
 .footer_blok {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 -22px;
 }
 
 .footer_blok_heading {
     display: block;
+    text-align: center;
     font-size: 52px;
     color: #f44d4f;
     line-height: 1.4;
     width: 280px;
-    margin-right: 45px;
+    margin: 0 22px;
+    flex-grow: 1;
 }
 
 .footer_blok_order_form {
     display: block;
-    width: 100%;
     flex-direction: column;
     background: #fff;
-    padding: 25px 100px 20px 30px;
+    padding: 25px;
+    flex-grow: 2;
+    margin: 0 22px;
 }
 
 .footer_blok_order_heading {
@@ -494,7 +507,7 @@ ol {
 
 .footer_blok_order_input {
     height: 35px;
-    width: 400px;
+    flex-grow: 1;
     box-sizing: border-box;
     border: none;
     border-radius: 0;
@@ -510,6 +523,7 @@ ol {
 }
 
 .footer_blok_order_btn {
+    display: block;
     height: 40px;
     width: 200px;
     background-color: #f44d4f;
@@ -524,6 +538,11 @@ ol {
 .footer_blok_order_btn:hover {
     background: #3d3b3f;
     cursor: pointer;
+    transition: .2s;
+}
+
+.footer_blok_order_btn:not(hover) {
+    transition: .2s;
 }
 
 .footer_blok_order_agrmnt {
@@ -545,10 +564,57 @@ ol {
     width: 40px;
 }
 
-.footer_blok_svg:hover {
+.footer_blok_svg__size:hover {
     cursor: pointer;
+    opacity: .8;
+    width: 60px;
+    height: 60px;
+    margin: 0 20px;
+    /*animation-name: svg_fadein;
+    animation-duration: .2s;*/
+    transition: .2s;
 }
 
+.footer_blok_svg__size:not(:hover) {
+    /*animation-name: svg_fade;
+    animation-duration: .2s;*/
+    transition: .2s;
+}
+
+
+/*@keyframes svg_fadei {
+    0% {
+        margin: 10px;
+        opacity: .5;
+        height: 40px;
+        width: 40px;
+    }
+
+    100% {
+        opacity: .8;
+        width: 60px;
+        height: 60px;
+        margin: 0 20px;
+     }
+}
+
+
+
+@keyframes svg_fad {
+    0% {
+        opacity: .8;
+        width: 60px;
+        height: 60px;
+        margin: 0 20px;
+    }
+
+    100% {
+        margin: 10px;
+        opacity: .5;
+        height: 40px;
+        width: 40px;
+     }
+}*/
 
 
 /*---- end section header ----*/
