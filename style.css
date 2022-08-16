@@ -19,6 +19,7 @@ body {
 .body_pic {
     background: url(./assets/img/girl.jpeg) no-repeat center fixed;
     width: 100%;
+    background-size: cover;
 }
 
 /*---- reusable styles ----*/
@@ -31,7 +32,7 @@ body {
 
 /*---- start section header ----*/
 .headerSection {
-    background: url("./assets/img/girl_run.jpeg") no-repeat 0 50%;
+    background: url("./assets/img/girl_run.jpeg") no-repeat 0% 50%;
     position: relative;
     z-index: 0;
 }
@@ -142,29 +143,34 @@ body {
 
 .discount_body {
     background-color: #fff;
+    min-width: 320px;
 }
 
 .discount_content {
     display: flex;
-    box-sizing: border-box;
     justify-content: center;
     padding-top: 45px;
 }
 
 .discount_content_girl {
-    padding-right: 40px;
+    width: 410px;
+    height: 522.99px;
     
 }
 
+.discount_content_rightcol {
+    padding-right: 20px;
+}
+
 .discount_heading__gray {
-    font-size: 42px;
+    font-size: 38px;
     color: #3d3b3f;
     line-height: 1.4;
     display: block;
 }
 
 .discount_heading__red {
-    font-size: 42px;
+    font-size: 38px;
     color: #f44d4f;
     line-height: 1.4;
 }
@@ -175,12 +181,12 @@ body {
     line-height: 1.4;
     font-weight: 400;
     margin-bottom: 0;
-    min-width: 340px;
+    min-width: 260px;
 }
 
 .discount_p__newline {
     display: block;
-    min-width: 340px;
+    min-width: 260px;
     margin-top: 10px;
 }
 
@@ -210,7 +216,7 @@ body {
     height: 35px;
     width: 200px;
     background-color: #3d3b3f;
-    margin-top: 15px;
+    margin:15px 0;
     border: none;
     color: #fff;
     font-size: 20px;
@@ -225,6 +231,7 @@ body {
 .instruction {
     background-color: #f5f5f5;
     padding-top: 45px;
+    min-width: 320px;
 }
 
 .instruction_heading {
@@ -239,10 +246,8 @@ body {
     display: flex;
     margin-top: 30px;
     padding-bottom: 70px;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
-    margin-right: -10px;
-    margin-left: -10px;
 }
 
 .instruction_list_column {
@@ -315,12 +320,12 @@ body {
     text-align: center;
     word-wrap: break-word;
     line-height: 1.8;
-    min-width: 500px;
 }
 
 .redsection {
     background-color: #f44d4f;
     padding-top: 60px;
+    min-width: 320px;
 }
 
 .redsection_text {
@@ -349,17 +354,18 @@ body {
 .lists {
     background-color: #f5f5f5;
     padding: 60px 0;
+    min-width: 320px;
 }
 
 .lists_colomns {
     display: flex;
     box-sizing: border-box;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
 .colomn {
-    margin: 0 10px;
+    margin: 0 40px;
 }
 
 .colomn_heading {
@@ -383,6 +389,7 @@ ol {
 
 .adv {
     background-color: #fff;
+    min-width: 320px;
 }
 
 .adv_blok {
@@ -390,18 +397,17 @@ ol {
     justify-content: center;
     padding: 60px 0;
     flex-wrap: wrap;
-    margin: -10px;
 }
 
 .adv_blok_gray {
     background-color: #3d3b3f;
-    margin: 10px;
+    margin: 3px;
     display: flex;
 }
 
 .adv_blok_red {
     background-color: #f44d4f;
-    margin: 10px;
+    margin: 3px;
     display: flex;
 }
 
@@ -461,13 +467,15 @@ ol {
 .footer {
     background: #f5f5f5;
     padding: 40px 0;
+    min-width: 320px;
+    width: 100%;
 }
 
 .footer_blok {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin: 0 -22px;
+    margin: 0;
 }
 
 .footer_blok_heading {
@@ -580,6 +588,287 @@ ol {
     animation-duration: .2s;*/
     transition: .2s;
 }
+
+
+@media screen and (max-width: 767px) {
+
+    .course {
+        margin: auto;
+    }
+
+    .courseContent_title, .courseContent_subtitle {
+        text-align: center;
+    }
+
+    .discount_content {
+        flex-wrap: wrap;      
+    }
+    .discount_content_girl {
+        height: 300px;
+        width: auto;
+        border-radius: 50%;
+        margin: 25px auto;
+    }
+
+    .discount_heading__gray, .discount_heading__red,
+    .courseContent_title,
+    .instruction_heading,
+    .adv_blok_heading, .footer_blok_heading {
+        font-size: 36px;
+    }
+    
+    .discount_content_rightcol {
+        text-align: center;
+        padding: 0 10px;
+    }
+
+    .discount_prise {
+        justify-content: center;
+    }
+
+    .instruction_list_heading {
+        font-size: 20px;
+    }
+
+    .bonus::before {
+        content: "";
+        display: block;
+        align-items: center;
+        color: #f5f5f5;
+        width: 0px;
+        height: 0px;
+        border: 10px solid #f5f5f5;
+        border-top-color: #f5f5f5;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+        margin: 0 auto;
+    }
+
+    .redsection::after {
+        content: "";
+        display: block;
+        align-items: center;
+        color: #f5f5f5;
+        width: 0px;
+        height: 0px;
+        border: 10px solid #f5f5f5;
+        border-top-color: #f5f5f5;
+        border-right-color: transparent;
+        border-top-color: transparent;
+        border-left-color: transparent;
+        margin: 0 auto;
+    }
+
+    .bonus {
+        background: url(./assets/img/girl.jpeg) no-repeat;
+        background-size: 100% ;
+    }
+
+    .bonus_heading, .bonus_heading__red, .redsection_text {
+        font-size: 20px;
+    }
+
+    .bonus_content {
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    .redsection {
+        padding-top: 20px;
+    }
+
+    .lists {
+        padding-top: 20px;
+    }
+
+    .adv_blok_heading {
+        width: auto;
+    }
+
+    .adv_blok_p {
+        height: 155px;
+        width: auto;
+        margin: 10px 20px;
+    }
+
+    .adv_blok_gray_btn, .adv_blok_red_btn {
+        display: block;
+    }
+
+    .adv_blok {
+        margin: 0;
+    }
+
+    .adv_blok_gray, .adv_blok_red {
+        max-width: 588px;
+    }
+
+    .footer_blok {
+        margin: 0;
+    }
+
+    .footer_blok_order_heading {
+        text-align: center;
+    }
+
+    .footer_blok_ordere_area {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .footer_blok_order_input {
+        width: 90%;
+        margin: 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    .headerSection {
+        background: #fff;
+    }
+
+    .headerSection:after {
+        display: none;
+    }
+
+    .courseContent {
+        padding: 25px 0;
+    }
+
+    .courseContent_title {
+        margin: 15px 20px;
+    }
+
+    .order {
+        padding: 10px;
+    }
+
+    .discount_content {
+        flex-wrap: wrap;    
+        padding-top: 25px;  
+    }
+
+    .discount_content_girl {
+        height: 250px;
+        width: auto;
+    }
+
+    .discount_heading__gray, .discount_heading__red,
+    .courseContent_title,
+    .instruction_heading,
+    .adv_blok_heading, .footer_blok_heading {
+        font-size: 26px;
+    }
+    
+    .discount_oldprise {
+        margin-right: 10px;
+    }
+
+    .discount_prise {
+        justify-content: center;
+    }
+
+    .instruction {
+        padding-top: 35px;
+    }
+
+    .instruction_list_heading {
+        font-size: 20px;
+    }
+
+    .bonus {
+        background: url(./assets/img/girl.jpeg) no-repeat;
+        background-size: cover;
+    }
+    
+
+    .bonus_heading, .bonus_heading__red, .redsection_text {
+        font-size: 20px;
+    }
+
+    .bonus_content {
+        font-size: 12px;
+        font-weight: 500;
+        margin-bottom: 0;
+        padding-bottom: 10px;
+    }
+
+    .adv_blok_heading {
+        width: auto;
+        margin-left: 10px;
+        margin-top: 10px;
+        font-size: 22px;
+    }
+
+    .adv_blok_p {
+        height: auto;
+        width: auto;
+        margin: 10px 10px;
+    }
+
+    .adv_blok_gray_btn, .adv_blok_red_btn {
+        display: block;
+        width: 100%;
+    }
+
+    .adv_blok {
+        margin: 0 -5px;
+        padding: 30px 0;
+    }
+
+    .adv_pic_girl, .adv_pic_fruits {
+        width: 120px;
+        height: auto;
+    }
+
+    .adv_blok_gray, .adv_blok_red, .adv_blok {
+        max-width: 588px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .footer {
+        padding-top: 20px;
+    }
+
+    .footer_blok {
+        margin: 0;
+    }
+
+    .footer_blok_heading {
+        padding-bottom: 10px;
+    }
+
+    .footer_blok_order_btn {
+        width: 90%;
+    }
+
+    .footer_blok_order_agrmnt {
+        text-align: center;
+    }
+
+    .footer_blok_svg {
+        padding-top: 20px;    }
+
+    .footer_blok_svg__size {
+        height: 30px;
+        width: 30px;
+    }
+
+    .footer_blok_svg__size:hover {
+        cursor: pointer;
+        opacity: .8;
+        width: 40px;
+        height: 40px;
+        margin: 0 20px;
+        /*animation-name: svg_fadein;
+        animation-duration: .2s;*/
+        transition: .2s;
+    }
+}
+
 
 
 /*@keyframes svg_fadei {
