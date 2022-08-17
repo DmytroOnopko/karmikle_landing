@@ -14,13 +14,31 @@ body {
     cursor: default;
     margin: 0;
     padding: 0;
+    position: relative;
+    z-index: 0;
+    background-color: #313131;
 }
 
+body::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url(./assets/img/girl.jpeg) no-repeat center fixed;
+    background-size: cover;
+    filter: grayscale(80%);
+    filter: opacity(.5);
+    z-index: -2;
+    background-color: #3d3b3f;
+}
+
+/*----
 .body_pic {
     background: url(./assets/img/girl.jpeg) no-repeat center fixed;
     width: 100%;
-    background-size: cover;
+    background-size: cover; 
 }
+----*/
 
 /*---- reusable styles ----*/
 .container {
@@ -279,7 +297,13 @@ body {
     text-align: center;
 }
 
-.bonus::before {
+.bonus__filtr {
+    max-width: 1200px;
+    min-width: 320px;
+    margin: 0 auto;
+}
+
+.bonus__filtr::before {
     content: "";
     display: block;
     align-items: center;
@@ -292,12 +316,11 @@ body {
     border-bottom-color: transparent;
     border-left-color: transparent;
     margin: 0 auto;
-
 }
 
 .bonus {
     background: none;
-    padding: 0 0 60px 0;
+    padding: 0 0 20px 0;
 }
 
 .bonus_heading {
@@ -315,16 +338,18 @@ body {
 }
 
 .bonus_content {
-    font-size: 20px;
+    font-size: 18px;
     color: #fff;
     text-align: center;
     word-wrap: break-word;
     line-height: 1.8;
+    max-width: 80%;
+    margin: auto;
 }
 
 .redsection {
     background-color: #f44d4f;
-    padding-top: 60px;
+    padding-top: 30px;
     min-width: 320px;
 }
 
@@ -334,6 +359,7 @@ body {
     color: #fff;
     line-height: 1.4;
     text-align: center;
+    margin-bottom: -35px;
 }
 
 .redsection::after {
@@ -630,7 +656,7 @@ ol {
         font-size: 20px;
     }
 
-    .bonus::before {
+    .bonus__filtr::before {
         content: "";
         display: block;
         align-items: center;
@@ -660,22 +686,48 @@ ol {
         margin: 0 auto;
     }
 
+    /*----
     .bonus {
         background: url(./assets/img/girl.jpeg) no-repeat;
         background-size: 100% ;
     }
+    ----*/
+
+    .bonus {
+        position: relative;
+        z-index: 0;
+        background-color: #313131;
+    }
+    
+    .bonus::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: url(./assets/img/girl.jpeg) no-repeat;
+        background-size: cover;
+        filter: grayscale(80%);
+        filter: opacity(.5);
+        z-index: -2;
+        background-color: #3d3b3f;
+        border: 0;
+    }
 
     .bonus_heading, .bonus_heading__red, .redsection_text {
-        font-size: 20px;
+        font-size: 22px;
     }
 
     .bonus_content {
-        font-size: 16px;
+        font-size: 14px;
         font-weight: bold;
     }
 
     .redsection {
         padding-top: 20px;
+    }
+
+    .redsection_text {
+        margin-bottom: 0;
     }
 
     .lists {
@@ -778,21 +830,23 @@ ol {
         font-size: 20px;
     }
 
+
+    /*----
     .bonus {
         background: url(./assets/img/girl.jpeg) no-repeat;
         background-size: cover;
     }
-    
+    ----*/
+
 
     .bonus_heading, .bonus_heading__red, .redsection_text {
-        font-size: 20px;
+        font-size: 18px;
     }
 
     .bonus_content {
-        font-size: 12px;
+        font-size: 11px;
         font-weight: 500;
         margin-bottom: 0;
-        padding-bottom: 10px;
     }
 
     .adv_blok_heading {
